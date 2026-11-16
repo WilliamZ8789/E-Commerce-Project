@@ -7,61 +7,61 @@
 
 const shoppingList = [
   // All-Purpose Enchantments
-  { name: "Mending", emeralds: 64, category: "All-Purpose Enchantments" },
-  { name: "Unbreaking", emeralds: 64, category: "All-Purpose Enchantments" },
-  { name: "Curse of Vanishing", emeralds: 4, category: "All-Purpose Enchantments" },
+  { name: "Mending", price: 24, category: "All-Purpose Enchantments" },
+  { name: "Unbreaking III", price: 28, category: "All-Purpose Enchantments" },
+  { name: "Curse of Vanishing", price: 24, category: "All-Purpose Enchantments" },
   
   // Armor Enchantments
-  { name: "Aqua Affinity", emeralds: 52, category: "Armor Enchantments" },
-  { name: "Blast Protection", emeralds: 28, category: "Armor Enchantments" },
-  { name: "Curse of Binding", emeralds: 4, category: "Armor Enchantments" },
-  { name: "Depth Strider", emeralds: 52, category: "Armor Enchantments" },
-  { name: "Feather Falling", emeralds: 64, category: "Armor Enchantments" },
-  { name: "Fire Protection", emeralds: 28, category: "Armor Enchantments" },
-  { name: "Frost Walker", emeralds: 16, category: "Armor Enchantments" },
-  { name: "Projectile Protection", emeralds: 16, category: "Armor Enchantments" },
-  { name: "Protection", emeralds: 64, category: "Armor Enchantments" },
-  { name: "Respiration", emeralds: 40, category: "Armor Enchantments" },
-  { name: "Soul Speed", emeralds: 28, category: "Armor Enchantments" },
-  { name: "Swift Sneak", emeralds: 40, category: "Armor Enchantments" },
-  { name: "Thorns", emeralds: 40, category: "Armor Enchantments" },
+  { name: "Aqua Affinity", price: 12, category: "Armor Enchantments" },
+  { name: "Blast Protection IV", price: 36, category: "Armor Enchantments" },
+  { name: "Curse of Binding", price: 4, category: "Armor Enchantments" },
+  { name: "Depth Strider III", price: 28, category: "Armor Enchantments" },
+  { name: "Feather Falling IV", price: 64, category: "Armor Enchantments" },
+  { name: "Fire Protection IV", price: 28, category: "Armor Enchantments" },
+  { name: "Frost Walker II", price: 40, category: "Armor Enchantments" },
+  { name: "Projectile Protection IV", price: 36, category: "Armor Enchantments" },
+  { name: "Protection IV", price: 36, category: "Armor Enchantments" },
+  { name: "Respiration III", price: 40, category: "Armor Enchantments" },
+  { name: "Soul Speed III", price: 28, category: "Armor Enchantments" },
+  { name: "Swift Sneak III", price: 40, category: "Armor Enchantments" },
+  { name: "Thorns III", price: 40, category: "Armor Enchantments" },
   
   // Melee Weapon Enchantments
-  { name: "Bane of Arthropods", emeralds: 4, category: "Melee Weapon Enchantments" },
-  { name: "Breach", emeralds: 28, category: "Melee Weapon Enchantments" },
-  { name: "Density", emeralds: 64, category: "Melee Weapon Enchantments" },
-  { name: "Fire Aspect", emeralds: 40, category: "Melee Weapon Enchantments" },
-  { name: "Knockback", emeralds: 16, category: "Melee Weapon Enchantments" },
-  { name: "Looting", emeralds: 52, category: "Melee Weapon Enchantments" },
-  { name: "Lunge", emeralds: 52, category: "Melee Weapon Enchantments" },
-  { name: "Sharpness", emeralds: 64, category: "Melee Weapon Enchantments" },
-  { name: "Smite", emeralds: 28, category: "Melee Weapon Enchantments" },
-  { name: "Sweeping Edge", emeralds: 40, category: "Melee Weapon Enchantments" },
-  { name: "Wind Burst", emeralds: 64, category: "Melee Weapon Enchantments" },
+  { name: "Bane of Arthropods V", price: 4, category: "Melee Weapon Enchantments" },
+  { name: "Breach IV", price: 28, category: "Melee Weapon Enchantments" },
+  { name: "Density V", price: 64, category: "Melee Weapon Enchantments" },
+  { name: "Fire Aspect II", price: 40, category: "Melee Weapon Enchantments" },
+  { name: "Knockback II", price: 16, category: "Melee Weapon Enchantments" },
+  { name: "Looting III", price: 52, category: "Melee Weapon Enchantments" },
+  { name: "Lunge III", price: 52, category: "Melee Weapon Enchantments" },
+  { name: "Sharpness V", price: 64, category: "Melee Weapon Enchantments" },
+  { name: "Smite V", price: 28, category: "Melee Weapon Enchantments" },
+  { name: "Sweeping Edge III", price: 40, category: "Melee Weapon Enchantments" },
+  { name: "Wind Burst III", price: 64, category: "Melee Weapon Enchantments" },
   
   // Ranged Weapon Enchantments
-  { name: "Channeling", emeralds: 28, category: "Ranged Weapon Enchantments" },
-  { name: "Flame", emeralds: 52, category: "Ranged Weapon Enchantments" },
-  { name: "Impaling", emeralds: 64, category: "Ranged Weapon Enchantments" },
-  { name: "Infinity", emeralds: 52, category: "Ranged Weapon Enchantments" },
-  { name: "Loyalty", emeralds: 52, category: "Ranged Weapon Enchantments" },
-  { name: "Multishot", emeralds: 28, category: "Ranged Weapon Enchantments" },
-  { name: "Piercing", emeralds: 52, category: "Ranged Weapon Enchantments" },
-  { name: "Power", emeralds: 52, category: "Ranged Weapon Enchantments" },
-  { name: "Punch", emeralds: 52, category: "Ranged Weapon Enchantments" },
-  { name: "Quick Charge", emeralds: 40, category: "Ranged Weapon Enchantments" },
-  { name: "Riptide", emeralds: 40, category: "Ranged Weapon Enchantments" },
+  { name: "Channeling", price: 28, category: "Ranged Weapon Enchantments" },
+  { name: "Flame", price: 52, category: "Ranged Weapon Enchantments" },
+  { name: "Impaling V", price: 64, category: "Ranged Weapon Enchantments" },
+  { name: "Infinity", price: 52, category: "Ranged Weapon Enchantments" },
+  { name: "Loyalty III", price: 52, category: "Ranged Weapon Enchantments" },
+  { name: "Multishot", price: 28, category: "Ranged Weapon Enchantments" },
+  { name: "Piercing IV", price: 52, category: "Ranged Weapon Enchantments" },
+  { name: "Power V", price: 52, category: "Ranged Weapon Enchantments" },
+  { name: "Punch II", price: 52, category: "Ranged Weapon Enchantments" },
+  { name: "Quick Charge III", price: 40, category: "Ranged Weapon Enchantments" },
+  { name: "Riptide III", price: 40, category: "Ranged Weapon Enchantments" },
   
   // Tool Enchantments
-  { name: "Efficiency", emeralds: 64, category: "Tool Enchantments" },
-  { name: "Fortune", emeralds: 64, category: "Tool Enchantments" },
-  { name: "Luck of the Sea", emeralds: 40, category: "Tool Enchantments" },
-  { name: "Lure", emeralds: 52, category: "Tool Enchantments" },
-  { name: "Silk Touch", emeralds: 64, category: "Tool Enchantments" }
+  { name: "Efficiency V", price: 64, category: "Tool Enchantments" },
+  { name: "Fortune III", price: 64, category: "Tool Enchantments" },
+  { name: "Luck of the Sea III", price: 40, category: "Tool Enchantments" },
+  { name: "Lure III", price: 52, category: "Tool Enchantments" },
+  { name: "Silk Touch", price: 64, category: "Tool Enchantments" }
 ];
 
 let cart = [];
-let totalEmeralds = 0;
+let totalPrice = 0;
 
 function addToCart(itemName) {
     const item = shoppingList.find(enchantment => enchantment.name === itemName);
@@ -71,7 +71,7 @@ function addToCart(itemName) {
     } else if (item) {
         console.log(`${item.name} successfully added to cart!`);
         cart.push(item);
-        totalEmeralds += item.emeralds;
+        totalPrice += item.price;
         return(cart);
     }
 }
@@ -81,14 +81,14 @@ function removeFromCart(itemName) {
         const removedItem = cart[itemIndex];
         console.log(`${removedItem.name} successfully removed from cart.`);
         cart.splice(itemIndex, 1);
-        totalEmeralds -= removedItem.emeralds;
+        totalPrice -= removedItem.price;
         return(cart);
     } else {
         console.log(`Unable to remove "${itemName}" because it's not included in the cart.`);
         return;
     }
 }
-/* const roundedemeralds = totalemeralds.toFixed(2); */
+/* const roundedPrice = totalPrice.toFixed(2); */
 
 console.log(addToCart("Mending"));
 console.log(addToCart("Lure"));
@@ -96,4 +96,4 @@ console.log(addToCart("Breach"));
 console.log(addToCart("Efficiency"));
 console.log(addToCart("Bane of Arthropods"));
 console.log(removeFromCart("Lure"));
-console.log(roundedEmeralds);
+//console.log(roundedPrice);

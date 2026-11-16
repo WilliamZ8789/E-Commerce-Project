@@ -99,10 +99,6 @@ body {
     border-radius: 0.8rem;
     flex-direction: column;
 }
-.card a {
-    margin-left: 100px;
-    flex-direction: column;
-}
 .btn {
     display: inline-block;
     display: flex;
