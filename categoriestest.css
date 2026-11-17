@@ -1,0 +1,51 @@
+.category-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  font-family: system-ui, sans-serif;
+}
+
+/* 1. Hide the actual radio buttons */
+.category-tabs input[type="radio"] {
+  display: none;
+}
+
+/* 2. Style the labels as clickable category tabs */
+.category-tabs label {
+  padding: 12px 20px;
+  cursor: pointer;
+  background: #f1f5f9;
+  color: #475569;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.category-tabs label:hover {
+  background: #e2e8f0;
+}
+
+/* 3. Highlight the active tab label */
+.category-tabs input[type="radio"]:checked + label {
+  background: #ffffff;
+  color: #0f172a;
+  border-bottom: 2px solid #2563eb;
+}
+
+/* 4. Hide all content panels by default */
+.tab-panel {
+  display: none;
+  width: 100%;
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-top: none;
+  order: 1; /* Forces panels to always appear below the tab row */
+}
+
+/* 5. Display the specific panel matching the checked radio button */
+#tab-all:checked ~ #panel-all,
+#tab-design:checked ~ #panel-design,
+#tab-dev:checked ~ #panel-dev {
+  display: block;
+}

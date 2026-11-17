@@ -46,20 +46,11 @@ body {
     margin-bottom: 20px;
 }
 .h2,
+.h3,
 .h4,
 .h5,
 .h6 {
-    font-size: 1.5rem;
-}
-.h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-.ul {
-    margin-bottom: 20px;
-}
-.li {
-    font-size: 1.2rem;
+    font-size: 4rem;
 }
 .p {
     font-size: 1rem;
@@ -68,13 +59,42 @@ body {
 .tabs {
     display: flex;
     flex-wrap: wrap;
-    max-width: 200px;
+    max-width: 100vh;
+    padding: 1rem;
 }
 .tabs input[type="radio"] {
     display: none;
 }
 .tabs label {
-    
+    display: none;
+    padding: 20px;
+    border: 1px solid #456789;
+    margin-top: 10px;
+}
+#tab1:checked ~ .page-1,
+#tab2:checked ~ .page-2,
+#tab3:checked ~ .page-3,
+#tab4:checked ~ .page-4,
+#tab5:checked ~ .page-5,
+#tab6:checked ~ .page-6 {
+    display: block;
+}
+#tab1:checked ~ .tabs label[for="tab1"],
+#tab2:checked ~ .tabs label[for="tab2"],
+#tab3:checked ~ .tabs label[for="tab3"],
+#tab4:checked ~ .tabs label[for="tab4"],
+#tab5:checked ~ .tabs label[for="tab5"],
+#tab6:checked ~ .tabs label[for="tab6"] {
+    background-color: rgb(255,0,0);
+    color: rgb(0,255,0);
+    border-color: rgb(0,0,255);
+}
+.page-btn {
+    cursor: pointer;
+    padding: 8px 16px;
+    border: 1px solid;
+    border-radius: 4px;
+    display: inline-block;
 }
 .container {
     text-align: center;
