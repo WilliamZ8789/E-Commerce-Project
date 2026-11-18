@@ -11,7 +11,7 @@ body,
 }
 
 body {
-    background-color: rgb(50, 50, 50);
+    background-color: rgb(36, 49, 63);
 }
 
 
@@ -62,32 +62,39 @@ body {
     max-width: 100vh;
     padding: 1rem;
 }
+/* Hide the radio inputs */
 .tabs input[type="radio"] {
     display: none;
 }
+/* Style the category tab headers */
 .tabs label {
+    order: 1; /* Sets the order to lay out an item in a flex/grid container */
+    padding: 6px 10px;
+    cursor: pointer;
+    background: #06224f;
+    border: 1px solid #bbd8ff;
+    border-bottom: none; /* "Merges" the category tab headers with the tab itself*/
+    margin-right: 4px; /* Gives a little space for each tab*/
+    border-radius: 6px 6px 0 0;
+    font-weight: 300; /* Sets the boldness of the font */
+    color: #ffffff;
+}
+.tabs .tab-panel {
+    order: 2; /* Sets the order to lay out an item in a flex/grid container */
     display: none;
     padding: 20px;
-    border: 1px solid #456789;
+    border: 3px solid #456789;
+    background: #765432;
     margin-top: 10px;
 }
-#tab1:checked ~ .page-1,
-#tab2:checked ~ .page-2,
-#tab3:checked ~ .page-3,
-#tab4:checked ~ .page-4,
-#tab5:checked ~ .page-5,
-#tab6:checked ~ .page-6 {
-    display: block;
+.tabs input[type="radio"]:checked + label {
+    background: #222222;
+    color: #373789;
+    border-bottom: 2px solid #ffffff;
+    margin-bottom: -1px;
 }
-#tab1:checked ~ .tabs label[for="tab1"],
-#tab2:checked ~ .tabs label[for="tab2"],
-#tab3:checked ~ .tabs label[for="tab3"],
-#tab4:checked ~ .tabs label[for="tab4"],
-#tab5:checked ~ .tabs label[for="tab5"],
-#tab6:checked ~ .tabs label[for="tab6"] {
-    background-color: rgb(255,0,0);
-    color: rgb(0,255,0);
-    border-color: rgb(0,0,255);
+.tabs input[type="radio"]:checked + label + .tab-panel {
+    display: block;
 }
 .page-btn {
     cursor: pointer;
