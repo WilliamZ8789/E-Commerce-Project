@@ -69,7 +69,7 @@ body {
 /* Style the category tab headers */
 .tabs label {
     order: 1; /* Sets the order to lay out an item in a flex/grid container */
-    padding: 6px 10px;
+    padding: 10px 16px;
     cursor: pointer;
     background: #06224f;
     border: 1px solid #bbd8ff;
@@ -79,17 +79,20 @@ body {
     font-weight: 300; /* Sets the boldness of the font */
     color: #ffffff;
 }
+/*Styling of the enchantment card panels*/
 .tabs .tab-panel {
     order: 2; /* Sets the order to lay out an item in a flex/grid container */
+    width: 100%;
     display: none;
     padding: 20px;
-    border: 3px solid #456789;
-    background: #765432;
-    margin-top: 10px;
+    border: 1px solid #bbd8ff;
+    background: #021e42;
+    margin-top: 0px;
 }
+/*Highlight the selected tab label*/
 .tabs input[type="radio"]:checked + label {
-    background: #222222;
-    color: #373789;
+    background: #0c4096;
+    color: #ffffff;
     border-bottom: 2px solid #ffffff;
     margin-bottom: -1px;
 }
