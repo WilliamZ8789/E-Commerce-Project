@@ -90,13 +90,5 @@ function removeFromCart(itemName) {
 }
 /* const roundedPrice = totalPrice.toFixed(2); */
 
-console.log(addToCart("Mending"));
-console.log(addToCart("Lure"));
-console.log(addToCart("Breach"));
-console.log(addToCart("Efficiency"));
-console.log(addToCart("Bane of Arthropods"));
-console.log(removeFromCart("Lure"));
-//console.log(roundedPrice);
-
 x = document.querySelector(".pop");
 x.style.display = "flex";

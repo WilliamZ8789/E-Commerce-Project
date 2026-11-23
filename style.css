@@ -59,7 +59,7 @@ body {
 .tabs {
     display: flex;
     flex-wrap: wrap;
-    max-width: 100vh;
+    /*max-width: 100vh;*/
     padding: 1rem;
 }
 /* Hide the radio inputs */
