@@ -22,8 +22,8 @@ body {
     text-align: center;
     flex-wrap: wrap;
     background-image:
-        linear-gradient(rgba(8, 84, 130, 0.8), rgba(60, 70, 115, 0.8)),
-        url();
+        linear-gradient(rgba(8, 130, 34, 0.8), rgba(8, 84, 130, 0.8)),
+        url("img\Enchanting_Table.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -43,7 +43,7 @@ body {
 }
 .h1 {
     font-size: 2.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 .h2,
 .h3,
@@ -52,8 +52,8 @@ body {
 .h6 {
     font-size: 4rem;
 }
-.p {
-    font-size: 1rem;
+.hero-content p {
+    font-size: 3rem;
     margin-bottom: 20px;
 }
 .tabs {
@@ -146,8 +146,8 @@ body {
     display: flex;
     height: 4rem;
     padding: 1.6rem;
-    background-color: rgb(0,100,200);
-    border: 1px solid rgb(115, 185, 255);
+    background-color: rgb(0, 137, 200);
+    border: 1px solid rgb(94, 173, 252);
     border-radius: 0.5rem;
     font-weight: 600;
     cursor: pointer;

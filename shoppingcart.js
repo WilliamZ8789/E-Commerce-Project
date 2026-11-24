@@ -92,3 +92,9 @@ function removeFromCart(itemName) {
 
 x = document.querySelector(".pop");
 x.style.display = "flex";
+
+const container = document.QuerySelector(".container");
+
+function enchantment(items) {
+    
+}
