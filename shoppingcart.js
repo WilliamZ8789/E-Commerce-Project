@@ -93,8 +93,32 @@ function removeFromCart(itemName) {
 x = document.querySelector(".pop");
 x.style.display = "flex";
 
-const container = document.QuerySelector(".container");
-
-function enchantment(items) {
-    
+function inject(item) {
+  const container = document.querySelector(".container");
+  container.insertAdjacentHTML(
+    "beforeend",
+    `<div class="card">
+        <h2 class="card-header">${item.name}</h2>
+        <img src="${item.img}" alt="" />
+        <p>filler filler filler</p>
+      </div> `,
+  );
 }
+//reminder to add class to button
+const buttons = document.querySelectorAll(".btn");
+buttons.forEach((btn) =>
+  btn.addEventListener("click", function (event) {
+    console.log(event.target.closest(".card").getAttribute("data-item"));
+    //go find item in array
+    //items[data-item]
+  }),
+);
+
+function showCart() {
+  document.querySelector(".pop").style.display = "flex";
+}
+showCart();
+
+/* function enchantment(items) {
+    
+} */
